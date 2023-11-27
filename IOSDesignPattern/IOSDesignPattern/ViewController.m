@@ -6,6 +6,15 @@
 //
 
 #import "ViewController.h"
+#import "ZYCMediaAdapter.h"
+#import "ZYCVlcPlayer.h"
+#import "ZYCMp4Player.h"
+#import "ZYCVlcPlayerAdapter.h"
+#import "ZYCMp4PlayerAdapter.h"
+
+#import "ZYCModel1.h"
+#import "ZYCModel2.h"
+#import "ZYCView.h"
 
 @interface ViewController ()
 
@@ -15,7 +24,43 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    
+
+}
+
+/// MARK: 适配器
+- (void)testAdapter {
+//    ZYCMediaAdapter *adapter = [[ZYCMediaAdapter alloc] initWithType:@"mp4"];
+//    [adapter playWithType:@"mp4" filename:@"mp4 filename"];
+    
+//    ZYCMediaAdapter *adapter = [[ZYCMediaAdapter alloc] init];
+//    ZYCVlcPlayer *vlcPlayer = [[ZYCVlcPlayer alloc] init];
+//    [vlcPlayer playVlcWithFilename:@"mp4 filename"];
+    
+//    ZYCVlcPlayer *vlcPlayer = [[ZYCVlcPlayer alloc] init];
+//    [vlcPlayer playVlcWithFilename:@"vlc filename"];
+    
+//    ZYCVlcPlayerAdapter *vlcAdapter = [[ZYCVlcPlayerAdapter alloc] init];
+//    [vlcAdapter playVlcWithFilename:@"vlc filename"];
+    
+    ZYCView *view1 = [[ZYCView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 60)];
+    view1.backgroundColor = [UIColor yellowColor];
+    ZYCModel1 *model1 = [[ZYCModel1 alloc] init];
+    model1.nickname = @"jack";
+    model1.desc = @"good";
+    view1.data = model1;
+    [self.view addSubview:view1];
+    
+    ZYCView *view2 = [[ZYCView alloc] initWithFrame:CGRectMake(0, 200, [UIScreen mainScreen].bounds.size.width, 60)];
+    view2.backgroundColor = [UIColor yellowColor];
+    ZYCModel2 *model2 = [[ZYCModel2 alloc] init];
+    model2.firstName = @"tom";
+    model2.middleName = @"jdk";
+    model2.lastName = @"ok";
+    model2.address = @"usa rich district";
+    view2.data = model2;
+    [self.view addSubview:view2];
 }
 
 

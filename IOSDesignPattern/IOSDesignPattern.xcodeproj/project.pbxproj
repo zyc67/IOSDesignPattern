@@ -17,6 +17,14 @@
 		237F95682B0345AF00EF3CEB /* IOSDesignPatternTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 237F95672B0345AF00EF3CEB /* IOSDesignPatternTests.m */; };
 		237F95722B0345AF00EF3CEB /* IOSDesignPatternUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 237F95712B0345AF00EF3CEB /* IOSDesignPatternUITests.m */; };
 		237F95742B0345AF00EF3CEB /* IOSDesignPatternUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 237F95732B0345AF00EF3CEB /* IOSDesignPatternUITestsLaunchTests.m */; };
+		237F958A2B0351C700EF3CEB /* ZYCVlcPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 237F95892B0351C700EF3CEB /* ZYCVlcPlayer.m */; };
+		237F958D2B0351D900EF3CEB /* ZYCMp4Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 237F958C2B0351D900EF3CEB /* ZYCMp4Player.m */; };
+		237F95902B03529C00EF3CEB /* ZYCMediaAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 237F958F2B03529C00EF3CEB /* ZYCMediaAdapter.m */; };
+		237F95942B0355EA00EF3CEB /* ZYCVlcPlayerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 237F95932B0355EA00EF3CEB /* ZYCVlcPlayerAdapter.m */; };
+		237F95972B0355FB00EF3CEB /* ZYCMp4PlayerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 237F95962B0355FB00EF3CEB /* ZYCMp4PlayerAdapter.m */; };
+		237F95A12B03656800EF3CEB /* ZYCModel1.m in Sources */ = {isa = PBXBuildFile; fileRef = 237F95A02B03656800EF3CEB /* ZYCModel1.m */; };
+		237F95A42B03657300EF3CEB /* ZYCModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = 237F95A32B03657300EF3CEB /* ZYCModel2.m */; };
+		237F95A72B03668D00EF3CEB /* ZYCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 237F95A62B03668D00EF3CEB /* ZYCView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +62,25 @@
 		237F956D2B0345AF00EF3CEB /* IOSDesignPatternUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSDesignPatternUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		237F95712B0345AF00EF3CEB /* IOSDesignPatternUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSDesignPatternUITests.m; sourceTree = "<group>"; };
 		237F95732B0345AF00EF3CEB /* IOSDesignPatternUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSDesignPatternUITestsLaunchTests.m; sourceTree = "<group>"; };
+		237F95862B0350F200EF3CEB /* ZYCMediaPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCMediaPlayer.h; sourceTree = "<group>"; };
+		237F95872B03517200EF3CEB /* ZYCAdvancedMediaPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCAdvancedMediaPlayer.h; sourceTree = "<group>"; };
+		237F95882B0351C700EF3CEB /* ZYCVlcPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCVlcPlayer.h; sourceTree = "<group>"; };
+		237F95892B0351C700EF3CEB /* ZYCVlcPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCVlcPlayer.m; sourceTree = "<group>"; };
+		237F958B2B0351D900EF3CEB /* ZYCMp4Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCMp4Player.h; sourceTree = "<group>"; };
+		237F958C2B0351D900EF3CEB /* ZYCMp4Player.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCMp4Player.m; sourceTree = "<group>"; };
+		237F958E2B03529C00EF3CEB /* ZYCMediaAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCMediaAdapter.h; sourceTree = "<group>"; };
+		237F958F2B03529C00EF3CEB /* ZYCMediaAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCMediaAdapter.m; sourceTree = "<group>"; };
+		237F95922B0355EA00EF3CEB /* ZYCVlcPlayerAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCVlcPlayerAdapter.h; sourceTree = "<group>"; };
+		237F95932B0355EA00EF3CEB /* ZYCVlcPlayerAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCVlcPlayerAdapter.m; sourceTree = "<group>"; };
+		237F95952B0355FB00EF3CEB /* ZYCMp4PlayerAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCMp4PlayerAdapter.h; sourceTree = "<group>"; };
+		237F95962B0355FB00EF3CEB /* ZYCMp4PlayerAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCMp4PlayerAdapter.m; sourceTree = "<group>"; };
+		237F959E2B03655100EF3CEB /* ModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelProtocol.h; sourceTree = "<group>"; };
+		237F959F2B03656800EF3CEB /* ZYCModel1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCModel1.h; sourceTree = "<group>"; };
+		237F95A02B03656800EF3CEB /* ZYCModel1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCModel1.m; sourceTree = "<group>"; };
+		237F95A22B03657300EF3CEB /* ZYCModel2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCModel2.h; sourceTree = "<group>"; };
+		237F95A32B03657300EF3CEB /* ZYCModel2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCModel2.m; sourceTree = "<group>"; };
+		237F95A52B03668D00EF3CEB /* ZYCView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCView.h; sourceTree = "<group>"; };
+		237F95A62B03668D00EF3CEB /* ZYCView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +131,7 @@
 		237F954A2B0345AC00EF3CEB /* IOSDesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				237F95812B034C1D00EF3CEB /* 适配器 */,
 				237F954B2B0345AD00EF3CEB /* AppDelegate.h */,
 				237F954C2B0345AD00EF3CEB /* AppDelegate.m */,
 				237F954E2B0345AD00EF3CEB /* SceneDelegate.h */,
@@ -134,6 +162,48 @@
 				237F95732B0345AF00EF3CEB /* IOSDesignPatternUITestsLaunchTests.m */,
 			);
 			path = IOSDesignPatternUITests;
+			sourceTree = "<group>";
+		};
+		237F95812B034C1D00EF3CEB /* 适配器 */ = {
+			isa = PBXGroup;
+			children = (
+				237F95912B0355C600EF3CEB /* 类适配器 */,
+				237F95822B03509E00EF3CEB /* 对象适配器 */,
+				237F959E2B03655100EF3CEB /* ModelProtocol.h */,
+				237F959F2B03656800EF3CEB /* ZYCModel1.h */,
+				237F95A02B03656800EF3CEB /* ZYCModel1.m */,
+				237F95A22B03657300EF3CEB /* ZYCModel2.h */,
+				237F95A32B03657300EF3CEB /* ZYCModel2.m */,
+				237F95A52B03668D00EF3CEB /* ZYCView.h */,
+				237F95A62B03668D00EF3CEB /* ZYCView.m */,
+			);
+			path = "适配器";
+			sourceTree = "<group>";
+		};
+		237F95822B03509E00EF3CEB /* 对象适配器 */ = {
+			isa = PBXGroup;
+			children = (
+				237F95862B0350F200EF3CEB /* ZYCMediaPlayer.h */,
+				237F95872B03517200EF3CEB /* ZYCAdvancedMediaPlayer.h */,
+				237F95882B0351C700EF3CEB /* ZYCVlcPlayer.h */,
+				237F95892B0351C700EF3CEB /* ZYCVlcPlayer.m */,
+				237F958B2B0351D900EF3CEB /* ZYCMp4Player.h */,
+				237F958C2B0351D900EF3CEB /* ZYCMp4Player.m */,
+				237F958E2B03529C00EF3CEB /* ZYCMediaAdapter.h */,
+				237F958F2B03529C00EF3CEB /* ZYCMediaAdapter.m */,
+			);
+			path = "对象适配器";
+			sourceTree = "<group>";
+		};
+		237F95912B0355C600EF3CEB /* 类适配器 */ = {
+			isa = PBXGroup;
+			children = (
+				237F95922B0355EA00EF3CEB /* ZYCVlcPlayerAdapter.h */,
+				237F95932B0355EA00EF3CEB /* ZYCVlcPlayerAdapter.m */,
+				237F95952B0355FB00EF3CEB /* ZYCMp4PlayerAdapter.h */,
+				237F95962B0355FB00EF3CEB /* ZYCMp4PlayerAdapter.m */,
+			);
+			path = "类适配器";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +337,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				237F95532B0345AD00EF3CEB /* ViewController.m in Sources */,
+				237F95942B0355EA00EF3CEB /* ZYCVlcPlayerAdapter.m in Sources */,
+				237F95A12B03656800EF3CEB /* ZYCModel1.m in Sources */,
 				237F954D2B0345AD00EF3CEB /* AppDelegate.m in Sources */,
+				237F95A42B03657300EF3CEB /* ZYCModel2.m in Sources */,
+				237F958A2B0351C700EF3CEB /* ZYCVlcPlayer.m in Sources */,
 				237F955E2B0345AF00EF3CEB /* main.m in Sources */,
+				237F95972B0355FB00EF3CEB /* ZYCMp4PlayerAdapter.m in Sources */,
+				237F95902B03529C00EF3CEB /* ZYCMediaAdapter.m in Sources */,
+				237F95A72B03668D00EF3CEB /* ZYCView.m in Sources */,
 				237F95502B0345AD00EF3CEB /* SceneDelegate.m in Sources */,
+				237F958D2B0351D900EF3CEB /* ZYCMp4Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
