@@ -20,6 +20,12 @@
 #import "ConcreteStrategyA.h"
 #import "ConcreteStrategyB.h"
 
+/// MARK: 3、原型
+#import "StudentModel.h"
+
+/// MARK: 4、外观
+#import "Computer.h"
+
 @interface ViewController ()
 
 @end
@@ -28,7 +34,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+//    [self testFacade];
 }
 
 /// MARK: 1、适配器
@@ -78,5 +84,31 @@
     NSLog(@"%d, %d", strategyA, strategyB);
 }
 
+/// MARK: 3、原型
+- (void)testPrototype {
+    StudentModel *stuA = [[StudentModel alloc] init];
+    stuA.name = @"A";
+    stuA.age = 20;
+    stuA.score = 100;
+    stuA.course = @[@1, @2];
+    
+    StudentModel *stuB = stuA.copy;
+    stuB.name = @"B";
+    stuB.age = 30;
+    stuB.course = @[@3, @4];
+    
+    NSLog(@"stuA.name = %@, stuA.age = %ld, stuA.score = %ld, stuA.course = %p, %@", stuA.name, stuA.age, stuA.score, stuA.course, stuA.course);
+    NSLog(@"stuB.name = %@, stuB.age = %ld, stuB.score = %ld, stuB.course = %p, %@", stuB.name, stuB.age, stuB.score, stuB.course, stuB.course);
+    NSLog(@"stuA = %@, stuB = %@", stuA, stuB);
+}
+
+/// MARK: 4、外观
+- (void)testFacade {
+    Computer *c = [[Computer alloc] init];
+    [c operater1];
+    [c operater2];
+    [c operater3];
+    [c operater4];
+}
 
 @end
