@@ -26,6 +26,13 @@
 /// MARK: 4、外观
 #import "Computer.h"
 
+/// MARK: 5、装饰
+#import "Espresso.h"
+#import "DarkRoast.h"
+#import "Milk.h"
+#import "Mocha.h"
+#import "Soy.h"
+
 @interface ViewController ()
 
 @end
@@ -34,7 +41,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [self testFacade];
+    [self testDecorator];
 }
 
 /// MARK: 1、适配器
@@ -111,4 +118,15 @@
     [c operater4];
 }
 
+/// MARK: 5、装饰
+- (void)testDecorator {
+    // https://juejin.cn/post/6844903443522404359
+    
+    id<Beverage> espresso = [[Espresso alloc]init];
+    NSLog(@"name: %@ \n cost: %f \n", [espresso getName], [espresso cost]);
+    
+    espresso = [[Milk alloc]initWithBeverage:espresso];
+    espresso = [[Mocha alloc]initWithBeverage:espresso];
+    NSLog(@"name: %@ \n cost:%f", [espresso getName], [espresso cost]);
+}
 @end
