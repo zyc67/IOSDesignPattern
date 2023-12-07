@@ -409,10 +409,6 @@
 		239A3BAF2B16E78F00101A7F /* 外观 */ = {
 			isa = PBXGroup;
 			children = (
-				239A3BD72B1744E800101A7F /* ConcereteDecorator */,
-				239A3BD82B181C6E00101A7F /* Decorator */,
-				239A3BD92B181C8100101A7F /* ConcereteComponent */,
-				239A3BDA2B181C9700101A7F /* Component */,
 				239A3BB02B16E79B00101A7F /* source */,
 				239A3BB12B16E80600101A7F /* Computer.h */,
 				239A3BB22B16E80600101A7F /* Computer.m */,
@@ -444,6 +440,10 @@
 		239A3BBD2B17091500101A7F /* 装饰 */ = {
 			isa = PBXGroup;
 			children = (
+				239A3BD72B1744E800101A7F /* ConcereteDecorator */,
+				239A3BD82B181C6E00101A7F /* Decorator */,
+				239A3BD92B181C8100101A7F /* ConcereteComponent */,
+				239A3BDA2B181C9700101A7F /* Component */,
 				239A3BBE2B17092300101A7F /* source */,
 			);
 			path = "装饰";

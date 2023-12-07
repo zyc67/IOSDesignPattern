@@ -1,5 +1,5 @@
 //
-//  Soy.h
+//  CondimentDecorator.h
 //  DecoratorPattern
 //
 //  Created by Utopia on 16/9/2.
@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "Beverage.h"
-#import "CondimentDecorator.h"
 
-@interface Soy : NSObject<CondimentDecorator>
+@protocol CondimentDecorator <Beverage>
 
-- (instancetype)initWithBeverage:(id<Beverage>)beverage;
+- (instancetype)initWithBeverage:(id<Beverage>) beverage;
+
 @end

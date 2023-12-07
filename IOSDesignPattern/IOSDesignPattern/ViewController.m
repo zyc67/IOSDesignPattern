@@ -128,5 +128,7 @@
     espresso = [[Milk alloc]initWithBeverage:espresso];
     espresso = [[Mocha alloc]initWithBeverage:espresso];
     NSLog(@"name: %@ \n cost:%f", [espresso getName], [espresso cost]);
+    
+    // https://segmentfault.com/a/1190000011444166
 }
 @end

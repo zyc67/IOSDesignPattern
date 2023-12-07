@@ -1,5 +1,5 @@
 //
-//  CondimentDecorator.h
+//  Milk.h
 //  DecoratorPattern
 //
 //  Created by Utopia on 16/9/2.
@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "Beverage.h"
+#import "CondimentDecorator.h"
 
-@protocol CondimentDecorator <Beverage>
+@interface Milk : NSObject <CondimentDecorator>
 
 @end

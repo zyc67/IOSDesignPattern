@@ -1,5 +1,5 @@
 //
-//  Milk.h
+//  Mocha.h
 //  DecoratorPattern
 //
 //  Created by Utopia on 16/9/2.
@@ -10,8 +10,6 @@
 #import "Beverage.h"
 #import "CondimentDecorator.h"
 
-@interface Milk : NSObject <CondimentDecorator>
-
-- (instancetype)initWithBeverage:(id<Beverage>) beverage;
+@interface Mocha : NSObject<CondimentDecorator>
 
 @end

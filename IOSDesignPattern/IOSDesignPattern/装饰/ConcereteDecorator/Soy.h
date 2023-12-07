@@ -1,5 +1,5 @@
 //
-//  Whip.h
+//  Soy.h
 //  DecoratorPattern
 //
 //  Created by Utopia on 16/9/2.
@@ -10,8 +10,6 @@
 #import "Beverage.h"
 #import "CondimentDecorator.h"
 
-@interface Whip : NSObject <CondimentDecorator>
-
-- (instancetype)initWithBeverage:(id<Beverage>)beverage;
+@interface Soy : NSObject<CondimentDecorator>
 
 @end
