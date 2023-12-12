@@ -33,6 +33,14 @@
 #import "Mocha.h"
 #import "Soy.h"
 
+/// MARK: 6、工厂
+
+/// MARK: 7、桥接
+#import "GBASystem.h"
+#import "GBAImplementor.h"
+#import "PSPSystem.h"
+#import "PSPImplementor.h"
+
 @interface ViewController ()
 
 @end
@@ -41,7 +49,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self testDecorator];
+    [self testBridge];
 }
 
 /// MARK: 1、适配器
@@ -131,4 +139,21 @@
     
     // https://segmentfault.com/a/1190000011444166
 }
+
+/// MARK: 6、工厂
+
+/// MARK: 7、桥接
+- (void)testBridge {
+    AbstractSystem *gbaSystem = [[GBASystem alloc] init];
+    [gbaSystem loadSystem];
+    gbaSystem.implementor = [[GBAImplementor alloc] init];
+    [gbaSystem command_a];
+    
+    AbstractSystem *pspSystem = [[PSPSystem alloc] init];
+    [pspSystem loadSystem];
+    pspSystem.implementor = [[PSPImplementor alloc] init];
+    [(PSPSystem *)pspSystem command_o];
+}
+
+
 @end
