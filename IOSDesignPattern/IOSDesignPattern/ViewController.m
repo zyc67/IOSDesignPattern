@@ -41,6 +41,8 @@
 #import "PSPSystem.h"
 #import "PSPImplementor.h"
 
+/// MARK: 8、代理
+
 @interface ViewController ()
 
 @end
@@ -49,7 +51,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self testBridge];
+    [self testDelegate];
 }
 
 /// MARK: 1、适配器
@@ -155,5 +157,9 @@
     [(PSPSystem *)pspSystem command_o];
 }
 
+/// MARK: 8、代理
+- (void)testDelegate {
+    
+}
 
 @end
